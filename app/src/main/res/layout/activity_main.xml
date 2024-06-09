@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFFF"
+        android:fontFamily="@font/Inter"
+        android:text="Back"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:icon="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/save_button"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_cornerns"
+        android:backgroundTint="#F2994A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/save" />
+
+    <ImageView
+        android:id="@+id/earth_icon"
+        android:layout_width="356dp"
+        android:layout_height="356dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_button"
+        app:srcCompat="@drawable/earth" />
+
+    <TextView
+        android:id="@+id/planet_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/Inter"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:text="Planet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earth_icon" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="22dp"
+        android:text="4.8"
+        android:fontFamily="@font/Inter"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earth_icon" />
+
+    <ImageView
+        android:id="@+id/rating_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/rating"
+        app:layout_constraintTop_toBottomOf="@+id/earth_icon"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/rating_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="22dp"
+        android:fontFamily="@font/Inter"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:text="8 billion reviews"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/BebasNeue"
+        android:text="The Earth"
+        android:textColor="#FFFFFF"
+        android:textSize="54sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planet_type" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="22dp"
+        android:fontFamily="@font/Inter"
+        android:text="Nestled in the vastness of space, Earth is the third planet from the Sun and the only known celestial body to harbour life (so far). With its diverse ecosystems, ranging from lush forests to expansive deserts, and its vast oceans teeming with life, Earth is a vibrant oasis in the cosmos. Its atmosphere provides the perfect conditions for a rich tapestry of flora and fauna, making it a haven for countless species, including humans. From the highest peaks to the deepest ocean trenches, Earth's beauty and biodiversity inspire awe and reverence, earning it the nickname &quot;The Blue Jewel&quot; of the solar system."
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <View
+        android:id="@+id/left_background"
+        android:layout_width="189dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="#11083E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <View
+        android:id="@+id/bottom_background"
+        android:layout_width="386dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="#11083E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/left_background" />
+
+    <View
+        android:id="@+id/right_background"
+        android:layout_width="189dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="#11083E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <TextView
+        android:id="@+id/left_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/BebasNeue"
+        android:text="71%"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/left_background"
+        app:layout_constraintTop_toTopOf="@+id/left_background" />
+
+    <TextView
+        android:id="@+id/left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:text="H20 Surface Coverage"
+        android:fontFamily="@font/Inter"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/left_background"
+        app:layout_constraintTop_toBottomOf="@+id/left_title" />
+
+    <ImageView
+        android:id="@+id/left_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/left_background"
+        app:layout_constraintEnd_toEndOf="@+id/left_background"
+        app:layout_constraintTop_toTopOf="@+id/left_background"
+        app:srcCompat="@drawable/water" />
+
+    <TextView
+        android:id="@+id/right_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/BebasNeue"
+        android:text="42%"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/right_background"
+        app:layout_constraintTop_toTopOf="@+id/right_background" />
+
+    <TextView
+        android:id="@+id/right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/Inter"
+        android:text="Technology Advancement"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/right_background"
+        app:layout_constraintTop_toBottomOf="@+id/right_title" />
+
+    <ImageView
+        android:id="@+id/right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/right_background"
+        app:layout_constraintEnd_toEndOf="@+id/right_background"
+        app:layout_constraintTop_toTopOf="@+id/right_background"
+        app:srcCompat="@drawable/tech" />
+
+    <TextView
+        android:id="@+id/bottom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/BebasNeue"
+        android:text="Facts about earth"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/bottom_background"
+        app:layout_constraintTop_toTopOf="@+id/bottom_background" />
+
+    <TextView
+        android:id="@+id/bottom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="8dp"
+        android:text="3 videos available"
+        android:fontFamily="@font/Inter"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/bottom_background"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_title" />
+
+    <Button
+        android:id="@+id/bottom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:backgroundTint="#7920C2"
+        android:text="Watch"
+        android:fontFamily="@font/Inter"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_background"
+        app:layout_constraintEnd_toEndOf="@+id/bottom_background"
+        app:layout_constraintTop_toTopOf="@+id/bottom_background" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
